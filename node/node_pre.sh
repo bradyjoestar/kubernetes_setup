@@ -20,7 +20,6 @@ EOF
 apt-get update
 apt-get install -y kubelet kubeadm kubectl
 
-go get github.com/kubernetes-incubator/cri-tools/cmd/crictl
 
 
 sed -i "s/cgroup-driver=systemd/cgroup-driver=cgroupfs/g" /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
