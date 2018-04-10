@@ -7,6 +7,7 @@
 docker 私有仓库的搭建和升级主要分为客户端和服务端两个部分。
 
 ### 服务端
+
 ```
 docker pull registry
 ```
@@ -61,13 +62,13 @@ docker push 192.168.0.153:5000/busybox
 ```
 
 
-删除本地镜像：
+删除本地镜像后，从客户端拉取仓库的镜像：
 ```
 sudo docker pull 192.168.0.153:5000/busybox
 ```
 
 
-然后从客户端拉取远程镜像：
+可以通过下面的url访问仓库
 ```
-curl -XGET http://registry:5000/v2/_catalog
+curl -XGET http://192.168.1.160:5000/v2/_catalog
 ```
