@@ -30,7 +30,7 @@ location / {
 
 ```
 
-
+### 防灾
 
 ```
 docker run -itd -p 8082:80 -v /data/nginx/file/:/data/file 192.168.1.160:5000/nginxfileserver /bin/bash
