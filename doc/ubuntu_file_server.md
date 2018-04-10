@@ -12,6 +12,7 @@
 
 然后可以通过service nginx restart 启动nginx服务器，访问192.168.1.160:8082 可获得文件列表。
 
+其中：autoindex       on;  autoindex是配置用户可以访问目录的权限。
 
 ```
 root /data/file;
