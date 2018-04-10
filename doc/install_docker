@@ -1,0 +1,11 @@
+为了加速ubuntu下docker的安装，借助内网的文件服务器，编写了快速安装docker的脚本。
+
+
+访问地址：http://192.168.1.160:8082/下的installDocker.sh
+
+主要实现了以下几个功能：
+- 下载docker-selinux.rpm包
+- 下载docker_17_03.rpm
+- 下载docker-compose
+- 分别安装上述包，并写入到环境变量中
+- 添加了docker repository的阿里云mirro和私有仓库的访问配置。
